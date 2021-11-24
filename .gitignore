@@ -1,0 +1,14 @@
+node_modules
+**/node_modules/**
+.cache
+.npm
+.yarn
+.pnpm-store
+.pnp.js
+.next
+.svelte-kit
+.nuxt
+*.pem
+*.log
+*.*-workspace
+*.workspace

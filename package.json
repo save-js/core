@@ -1,0 +1,28 @@
+{
+  "name": "@savejs/core",
+  "version": "1.0.0",
+  "author": {
+    "name": "Nicholas Berlette",
+    "email": "help@savejs.com",
+    "url": "https://savejs.com"
+  },
+  "license": "MIT",
+  "bugs": "https://github.com/save-js/core/issues",
+  "homepage": "https://savejs.com/core", 
+  "readme": "https://github.com/save-js/core#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/save-js/core.git"
+  },
+  "description": "Save.js Core Packages",
+  "keywords": [
+    "save.js",
+    "save-javascript",
+    "core",
+    "packages",
+    "utilities",
+    "tools",
+    "helpers",
+    "functions"
+  ]
+}
