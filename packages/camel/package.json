@@ -1,0 +1,75 @@
+{
+  "name": "@savejs/camel",
+  "version": "0.0.1",
+  "license": "WTFPL",
+  "author": {
+    "name": "Nicholas Berlette",
+    "email": "nick@berlette.com",
+    "url": "https://savejs.com"
+  },
+  "repository": {
+    "url": "https://github.com/save-js/core.git",
+    "type": "git",
+    "directory": "packages/camel"
+  },
+  "readme": "https://github.com/save-js/core/packages/camel/readme.md",
+  "bugs": "https://github.com/save-js/core/issues",
+  "homepage": "https://pkg.savejs.com/core/camel",
+  "private": "false",
+  "type": "module",
+  "types": "./dist/camel.d.ts",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "test": "ava"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/camel.js",
+      "require": "./dist/camel.cjs",
+      "default": "./dist/camel.js"
+    },
+    "./src": {
+      "import": "./src/camel.ts",
+      "require": false
+    },
+    "./": "./dist/",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "dist/camel.js",
+    "dist/camel.cjs",
+    "dist/camel.d.ts"
+  ],
+  "main": "./dist/camel.cjs",
+  "module": "./dist/camel.js",
+  "esnext": "./dist/camel.js",
+  "browser": "./dist/camel.js",
+  "unpkg": "./dist/camel.js",
+  "source": "./src/camel.ts",
+  "runkitExamplePath": "./examples/runkit.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "camelCase conversion for strings.",
+  "keywords": [
+    "camelcase",
+    "case-conversion",
+    "strings",
+    "save-js"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "21.0.1",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "13.0.6",
+    "@rollup/plugin-typescript": "8.3.0",
+    "eslint": "8.2.0",
+    "eslint-config-prettier": "8.3.0",
+    "prettier": "2.4.1",
+    "rollup": "2.60.0",
+    "rollup-plugin-terser": "7.0.2",
+    "tslib": "2.3.1",
+    "typescript": "4.4.4"
+  }
+}
